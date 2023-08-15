@@ -7,7 +7,6 @@ console.log(dropCap("SeklBAPdSqqPsEf bH rGNQNDOubKAhH"));
 console.log(dropCap('Apple Banana'));
 console.log(dropCap('rAnDoM CaPs CrAzInEsS'));
 
-
 // KATA 2 7kyu
 // https://www.codewars.com/kata/57d1f36705c186d018000813/train/javascript
 const gordon = a => a.toUpperCase().split(' ')
@@ -20,7 +19,6 @@ console.log(gordon('i am a chef'));
 // https://www.codewars.com/kata/5ace2d9f307eb29430000092/train/javascript
 const modifyMultiply =(str,i,n) => Array(n).fill(str.split(' ')[i]).join('-');
 
-
 console.log(modifyMultiply("This is a string", 3, 5));
 console.log(modifyMultiply("Is sloppiness in code caused by ignorance or apathy? I don't know and I don't care.", 6, 8));
 
@@ -31,7 +29,7 @@ const switcher = x => {
     if (el == 27) return '!'
     if (el == 28) return '?';
     if (el == 29) return ' ';
-    return String.fromCharCode(97 + 26 - parseInt(el))
+    return String.fromCharCode(97 + 26 - parseInt(el));
   }).join('');
 }
 
